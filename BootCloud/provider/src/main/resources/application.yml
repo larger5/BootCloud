@@ -1,0 +1,12 @@
+server:
+  port: 9400
+spring:
+  application:
+    name: provider-message
+
+eureka:
+  instance:
+    prefer-ip-address: true # 注册服务的时候使用服务的ip地址
+  client:
+    service-url:
+      defaultZone: http://localhost:9500/eureka/

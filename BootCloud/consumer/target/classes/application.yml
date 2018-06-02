@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: consumer-message
+server:
+  port: 9600
+
+eureka:
+  instance:
+    prefer-ip-address: true # ע������ʱ��ʹ�÷����ip��ַ
+  client:
+    service-url:
+      defaultZone: http://localhost:9500/eureka/

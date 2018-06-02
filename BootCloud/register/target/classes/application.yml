@@ -1,0 +1,10 @@
+server:
+  port: 9500
+eureka:
+  instance:
+    hostname: eureka-server  # eurekaʵ����������
+  client:
+    register-with-eureka: false #�����Լ�ע�ᵽeureka��
+    fetch-registry: false #����eureka������ȡ�����ע����Ϣ
+    service-url:
+      defaultZone: http://localhost:9500/eureka/

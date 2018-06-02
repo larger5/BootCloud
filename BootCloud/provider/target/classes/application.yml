@@ -1,0 +1,12 @@
+server:
+  port: 9400
+spring:
+  application:
+    name: provider-message
+
+eureka:
+  instance:
+    prefer-ip-address: true # ע������ʱ��ʹ�÷����ip��ַ
+  client:
+    service-url:
+      defaultZone: http://localhost:9500/eureka/
